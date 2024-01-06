@@ -1,0 +1,116 @@
+.features {
+    width: 1440px;
+    margin: auto;
+    background-color: $second-bg;
+
+    .why {
+        @include text($title-color, $font-main, 40px, normal, 700, 57px, 0.2px);
+        text-decoration-line: underline;
+        margin-top: 211px;
+    }
+
+    p {
+        width: 510px;
+        @include text($secondary-color, $font-main, 14px, normal, 500, 20px, 0.2px);
+        text-align: center;
+    }
+}
+
+.title {
+    display: flex;
+    width: 864px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+}
+
+.blockis {
+    display: flex;
+    gap: 30px;
+    width: 230px;
+    margin-top: 50px;
+    margin-left: 195.5px;
+    padding-bottom: 80px;
+}
+
+.blocki {
+    display: flex;
+    width: 230px;
+    padding: 30px 40px;
+    background-color: $white-color;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    h2 {
+        @include text($title-color, $font-main, 40px, normal, 700, 57px, 0.2px);
+    }
+
+    h5 {
+        width: 186px;
+        @include text($secondary-color, $font-main, 16px, normal, 700, 24px, 0.1px);
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:416px) {
+    .features {
+        max-width: 416px;
+        margin: 0;
+        background-color: $third-bg;
+
+        .why {
+            width: 255px;
+            text-align: center;
+            @include text($title-color, $font-main, 40px, normal, 700, 57px, 0.2px);
+            text-decoration-line: none;
+            margin-top: 211px;
+        }
+
+        p {
+            width: 225px;
+            @include text($secondary-color, $font-main, 14px, normal, 500, 20px, 0.2px);
+            text-align: center;
+            margin-bottom: 75px;
+        }
+    }
+
+    .title {
+        display: flex;
+        max-width: 416px;
+        
+        align-items: center;
+        gap: 10px;
+        margin: auto;
+    }
+
+    .blockis {
+        flex-direction: column;
+        gap: 30px;
+        width: 230px;
+        margin: 0;
+        padding-bottom: 80px;
+        margin-left: 89px;
+    }
+
+    .blocki {
+        display: flex;
+        max-width: 230px;
+        padding: 30px 40px;
+        background-color: $white-color;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        h2 {
+            @include text($title-color, $font-main, 40px, normal, 700, 57px, 0.2px);
+        }
+
+        h5 {
+            width: 186px;
+            @include text($secondary-color, $font-main, 16px, normal, 700, 24px, 0.1px);
+            text-align: center;
+        }
+    }
+}

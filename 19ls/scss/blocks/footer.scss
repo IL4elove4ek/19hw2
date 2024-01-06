@@ -1,0 +1,205 @@
+footer {
+    width: 1440px;
+    margin: auto;
+
+
+}
+
+.foot__top {
+    margin-left: 195px;
+
+    .foot__title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    display: flex;
+    height: 142px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    h3 {
+        @include text($title-color, $font-main, 24px, normal, 700, 32px, 0.1px);
+    }
+
+    p {
+        @include text($secondary-color, $font-main, 14px, normal, 500, 20px, 0.2px);
+    }
+
+    button {
+        width: 160px;
+        margin-left: 380px;
+        display: flex;
+        padding: 15px 40px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-radius: 5px;
+        background: $accent-bg;
+
+        p {
+            @include text($white-color, $font-main, 14px, normal, 700, 28px, 0.2px);
+            text-align: center;
+            width: 90px;
+            height: 80px;
+        }
+    }
+}
+
+.foot__cent {
+    width: 1440px;
+    height: 302px;
+    padding-left: 195px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: $footer-bg;
+    display: flex;
+    gap: 30px;
+
+    h5 {
+        @include text($white-color, $font-main, 16px, normal, 700, 24px, 0.1px);
+
+    }
+}
+
+.col2 {
+    display: flex;
+    width: 148px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    a {
+        @include text($white-color, $font-main, 14px, normal, 600, 24px, 0.2px);
+    }
+}
+
+.col4 {
+    display: flex;
+    width: 321px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    a {
+        @include text($white-color, $font-main, 14px, normal, 600, 24px, 0.2px);
+    }
+}
+
+.svg {
+    display: flex;
+    @include text($white-color, $font-main, 14px, normal, 600, 24px, 0.2px);
+    gap: 10px;
+
+}
+
+.foot__bot {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    margin-left: 195px;
+
+    h6 {
+        width: 600px;
+        @include text($secondary-color, $font-main, 14px, normal, 600, 24px, 0.2px);
+
+    }
+}
+
+.social {
+    margin-left: 481px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width:416px) {
+    footer {
+        max-width: 416px;
+    }
+
+    .foot__cent {
+        max-width: 416px;
+        height: 1203px;
+        padding-left: 87px;
+        padding-right: 88px;
+        padding-bottom: 50px;
+        background-color: $footer-bg;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .foot__bot {
+        max-width: 416px;
+        height: 172px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin: 0 0 30px 87px;
+        display: flex;
+        flex-direction: column;
+
+        h6 {
+            max-width: 231px;
+            height: 48px;
+            @include text($secondary-color, $font-main, 14px, normal, 600, 24px, 0.2px);
+
+        }
+    }
+
+    .social {
+        margin: 50px 0 0 0;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .foot__top {
+        max-width: 416px;
+        height: 302px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        .foot__title {
+          margin-left:87px ;
+            display: flex;
+            gap: 10px;
+        }
+
+        h3 {
+            width: 250px;
+            @include text($title-color, $font-main, 24px, normal, 700, 32px, 0.1px);
+        }
+
+        p {
+            width: 205px;
+            @include text($secondary-color, $font-main, 14px, normal, 500, 20px, 0.2px);
+        }
+
+        button {
+            max-width: 160px;
+            margin: 50px 0 0 87px;
+            height: 58px;
+            display: flex;
+            padding: 15px 40px;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            border-radius: 5px;
+            background: $accent-bg;
+
+            p {
+                @include text($white-color, $font-main, 14px, normal, 700, 28px, 0.2px);
+                text-align: center;
+                width: 90px;
+                height: 80px;
+            }
+        }
+    }
+}

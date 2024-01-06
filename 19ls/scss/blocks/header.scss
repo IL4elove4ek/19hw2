@@ -1,0 +1,286 @@
+.header {
+    width: 1440px;
+    height: 793px;
+    background-image: url(../../images/header/cover.png);
+    margin: auto;
+}
+
+.header__top {
+    display: flex;
+    align-items: center;
+    width: 1186px;
+    margin: auto;
+    padding-top: 23px;
+
+}
+
+// .header__logo {
+
+// }
+.header__logo-text {
+    @include text($title-color, $font-main, 24px, none, 700, 32px, 0.1px);
+}
+
+.nav {
+    margin-left: 117px;
+    padding-top: 5px;
+
+    ul {
+        @extend %flex-main;
+        width: 280px;
+
+        a {
+            @include text($secondary-color, $font-main, 14px, none, 600, 24px, 0.2px)
+        }
+    }
+}
+
+.header__burger-menu {
+    margin-left: 659px;
+    padding-top: 10px;
+}
+
+.header__content {
+    margin: 116px auto;
+    margin-bottom: 0;
+    width: 1186px;
+
+}
+
+.header__logo-title {
+    width: 509px;
+    @include text($title-color, $font-main, 58px, normal, 800, 80px, 0.2px);
+}
+
+.header__content-subtitle {
+    @include text($secondary-color, $font-main, 20px, normal, 500, 30px, 0.2px);
+    width: 376px;
+    padding: 35px 0 35px 0;
+}
+
+.header__vontent-actions {
+    display: flex;
+}
+
+.get {
+    @include text($white-color, $font-main, 14px, normal, 700, 28px, 0.2px);
+    display: flex;
+    padding: 10px 36px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 37px;
+    background: var(--primary-color, #FFA62B);
+}
+
+.learn {
+    @include text($main-bg, $font-main, 14px, normal, 700, 28px, 0.2px);
+    display: flex;
+    padding: 10px 36px;
+    margin-left: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 37px;
+    border: 1px solid #00A0C1;
+}
+
+.header__bottom {
+    width: 1146px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 126px;
+}
+
+.block {
+    width: 348px;
+    height: 210px;
+    margin-top: 100px;
+    display: flex;
+    padding: 35px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: $white-color;
+    box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+
+}
+
+.block:hover {
+
+
+    background-color: $main-bg;
+}
+
+.header__bottom .block:hover {
+    color: $white-color;
+}
+
+.header__bottom-subtitle {
+    @include text($secondary-color, $font-main, 14px, normal, 500, 20px, 0.2px);
+
+}
+
+.header__logo-bttext {
+    @include text($title-color, $font-main, 24px, none, 700, 32px, 0.1px);
+    // padding: 10px 0 10px 0;
+}
+
+@media screen and (max-width:416px) {
+    .header {
+        max-width: 416px;
+        height: 2026px;
+        background-image: url(../../images/media/bg.png);
+        margin: 0;
+    }
+
+    .header__top {
+        display: flex;
+        align-items: center;
+        max-width: 416px;
+        height: 532px;
+        margin: auto;
+        padding-top: 32px;
+
+    }
+
+
+    .header__logo-text {
+        @include text($title-color, $font-main, 24px, none, 700, 32px, 0.1px);
+        margin-left: 36px;
+        margin-bottom: 470px;
+    }
+
+    .nav {
+      display: contents;
+        margin-left: 117px;
+        padding-top: 5px;
+
+        ul {
+            @extend %flex-main;
+            max-width: 280px;
+            gap: 30px;
+  display: flex;
+        flex-direction: column;
+            a {
+                @include text($secondary-color, $font-main, 30px, none, 400, 45px, 0.2px);
+text-align: center;
+            }
+        }
+    }
+
+    .header__burger-menu {
+        margin-left: 659px;
+        padding-top: 10px;
+    }
+
+    .header__content {
+        margin: 116px auto;
+        margin-bottom: 0;
+        max-width: 416px;
+
+    }
+
+    .header__logo-title {
+        max-width: 355px;
+        margin: auto;
+        text-align: center;
+        @include text($title-color, $font-main, 40px, normal, 700, 57px, 0.2px);
+    }
+
+    .header__content-subtitle {
+        @include text($secondary-color, $font-main, 20px, normal, 500, 30px, 0.2px);
+        width: 279px;
+        margin: auto;
+        padding: 35px 0 35px 0;
+       
+text-align: center;
+    }
+
+    .header__vontent-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    .get {
+        @include text($white-color, $font-main, 14px, normal, 700, 28px, 0.2px);
+        display: flex;
+        max-width: 185px;
+        height: 48px;
+        padding: 10px 36px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-radius: 37px;
+        background: var(--primary-color, #FFA62B);
+        margin-bottom: 25px;
+        margin-left: 10px;
+        p{
+            width: 123px;
+        }
+    }
+
+    .learn {
+        @include text($main-bg, $font-main, 14px, normal, 700, 28px, 0.2px);
+        display: flex;
+        max-width: 154px;
+        height: 48px;
+        padding: 10px 36px;
+        
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-radius: 37px;
+        border: 1px solid #00A0C1;
+        p{
+            width: 92px;
+        }
+    }
+
+    .header__bottom {
+        max-width: 416px;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .block {
+padding: 35px 40px;
+        width: 328px;
+        height: 210px;
+        margin-top: 100px;
+        margin-left: 44px;
+        margin-right: 44px;
+        display: flex;
+        padding: 35px 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        background-color: $white-color;
+        box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+
+    }
+
+    .block:hover {
+
+
+        background-color: $main-bg;
+    }
+
+    .header__bottom .block:hover {
+        color: $white-color;
+    }
+
+    .header__bottom-subtitle {
+        @include text($secondary-color, $font-main, 14px, normal, 500, 20px, 0.2px);
+
+    }
+
+    .header__logo-bttext {
+        @include text($title-color, $font-main, 24px, none, 700, 32px, 0.1px);
+        // padding: 10px 0 10px 0;
+    }
+
+}

@@ -1,0 +1,133 @@
+.advice {
+    width: 1440px;
+    margin: auto;
+    background-color: $second-bg;
+}
+
+.practice__advice {
+    display: flex;
+   width: 864px;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    h2 {
+        margin-top: 125px;
+        @include text($title-color, $font-main, 40px, normal, 700, 57px, 0.2px);
+    }
+
+    p {
+       
+        @include text($secondary-color, $font-main, 14px, normal, 500, 20px, 0.2px);
+        text-align: center;
+       span{
+        display: flex;
+        width: 350px;
+        margin: auto;
+       }
+    }
+    
+    
+}
+
+.block__advices {
+    display: flex;
+    gap: 30px;
+    margin-top: 45px ;
+    margin-left: 199.5px;
+    padding-bottom: 80px;
+}
+
+.block__a {
+    width: 232px;
+    
+    background-color: $white-color;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+img{
+   width: 230px;
+    height: 138px;
+}
+    h5 {
+        @include text($title-color, $font-main, 16px, normal, 700, 24px, 0.1px);
+        padding: 30px;
+        width: 190px;
+        height: 48px;
+    }
+    p{
+        @include text($secondary-color, $font-main, 14px, normal, 500, 20px, 0.2px);
+        padding: 30px;
+    }
+}
+@media screen and (max-width:416px){
+    .advice {
+        max-width: 416px;
+        margin: 0;
+        background-color: $third-bg;
+    }
+    
+    .practice__advice {
+       
+       max-width: 416px;
+       
+       display: flex;
+       flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    
+        h2 {
+            margin-top: 125px;
+            @include text($title-color, $font-main, 40px, normal, 700, 57px, 0.2px);
+        }
+    
+        p {
+           
+            @include text($secondary-color, $font-main, 14px, normal, 500, 20px, 0.2px);
+            text-align: center;
+            width: 225px;
+           span{
+            display: flex;
+            width: 225px;
+            margin: auto;
+           }
+        }
+        
+        
+    }
+    
+    .block__advices {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 45px ;
+        margin: 0;
+        padding-bottom: 181px;
+    }
+    
+    .block__a {
+        width: 232px;
+        margin-left: 87px;
+        background-color: $white-color;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    img{
+       width: 230px;
+        height: 138px;
+    }
+        h5 {
+            @include text($title-color, $font-main, 16px, normal, 700, 24px, 0.1px);
+            padding: 30px;
+            width: 190px;
+            height: 48px;
+        }
+        p{
+            @include text($secondary-color, $font-main, 14px, normal, 500, 20px, 0.2px);
+            padding: 30px;
+        }
+    }
+}
